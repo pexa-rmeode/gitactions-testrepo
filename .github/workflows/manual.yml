@@ -37,5 +37,5 @@ jobs:
         ls -a
         echo "---------"
         pwd
-        sh ./main/gatling-charts-highcharts-bundle-3.8.4/bin/gatling.sh -rm local rd ""
+        sh ./main/gatling-charts-highcharts-bundle-3.8.4/bin/gatling.sh -rm local -rd ""
       
