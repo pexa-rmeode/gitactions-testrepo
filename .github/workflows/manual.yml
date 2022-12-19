@@ -39,3 +39,8 @@ jobs:
         pwd
         sh ./main/gatling-charts-highcharts-bundle-3.8.4/bin/gatling.sh -rm local -rd "perf test"
       
+    - name: Archive code coverage results
+      uses: actions/upload-artifact@v3
+      with:
+        name: gatling-report
+        path: main/gatling-charts-highcharts-bundle-3.8.4/results
